@@ -20,7 +20,7 @@ function App() {
 				<h1 className='tittle'>Rick & Morty</h1>
 
 				{characters ? (
-				<Characters characters={characters} />
+				<Characters characters={characters} setCharacters={setCharacters}/>
 				) : (
 					<>
 						<img src={imageRickMorty} className="img-home" alt="Ricky & Morty" />
