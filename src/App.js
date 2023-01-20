@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import imageRickMorty from './img/rick-morty.png';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const reqApi = () => {
+		console.log("Clicking");
+	}
+
+	return (
+		<div className="App">
+			<header className="App-header">
+				<h1 className='tittle'>Rick & Morty</h1>
+				<img src={imageRickMorty} className="img-home" alt="Ricky & Morty" />
+				<button onClick={reqApi} className="btn-search">
+					Buscar personajes
+				</button>
+			</header>
+		</div>
+	);
 }
 
 export default App;
